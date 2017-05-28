@@ -1,7 +1,6 @@
 angular.module('video-player')
 .directive('videoList', function() {
   return {
-    // TODO
     scope: {
       video: '<',
       onClick: '<',
@@ -10,8 +9,6 @@ angular.module('video-player')
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function($scope) {
-      // debugger;
-      // $scope.videoList = window.exampleVideoData;
       console.log($scope);
     },
     templateUrl: 'src/templates/videoList.html'
