@@ -8,7 +8,6 @@ angular.module('video-player')
       service: '<'
     },
     controller: function($scope) {
-      console.log($scope);
       this.onClick = function() {
         this.service.search({}, function() {});
         this.result(this.searchTerm);

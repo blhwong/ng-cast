@@ -14,7 +14,6 @@ angular.module('video-player')
         this.currentVideo = obj;
       }.bind(this);
       this.searchResults = function(searchTerm) {
-        console.log('click');
         var options = {
           query: searchTerm,
           key: window.YOUTUBE_API_KEY,
@@ -29,7 +28,6 @@ angular.module('video-player')
           self.currentVideo = self.videos[0];
         });
       };
-      console.log($scope);
       this.searchResults('dog');
     },
     templateUrl: 'src/templates/app.html'
